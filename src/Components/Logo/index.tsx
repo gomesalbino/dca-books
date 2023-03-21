@@ -1,25 +1,27 @@
-import logo  from "../../imagens/logo.svg";
+import logo from "../../imagens/logo.svg";
 
 
 import styled from "styled-components";
 
 function Logo() {
 
- const Logo = styled.div`
+    const Logo = styled.div`
     display: flex;
-    margin: 40px;
+    margin: 50px;
     text-align: center;
     margin-left: 7%;
+    justify-content: center;
  
  `
- const LogoImagem = styled.img`
- 
-    width: 40px;
-    height: 40px;
+    const LogoImagem = styled.img`
+    display: flex;
+    width: 120px;
     align-items: center;
- 
+    margin-top: 0;
+    
+    
  `
- const LogoTitulo = styled.p`
+    const LogoTitulo = styled.p`
  
     margin-left: 15px;
     font-weight: 700;
@@ -35,6 +37,7 @@ function Logo() {
             <Logo>
                 <LogoImagem src={logo} alt={"Imagem do logo"} />
                 <LogoTitulo><strong>DCA-Code</strong> Books</LogoTitulo>
+
             </Logo>
         </>
     );
